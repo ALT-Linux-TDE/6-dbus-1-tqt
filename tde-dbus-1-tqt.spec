@@ -21,6 +21,14 @@ BuildRequires(pre): tde-rpm-macros
 # Please submit bugfixes or comments via http://www.trinitydesktop.org/
 #
 
+# TDE variables
+%define tde_epoch 2
+%if "%{?tde_version}" == ""
+%define tde_version 14.0.4
+%endif
+
+%define libdbus libdbus
+
 Name: tde-dbus-1-tqt
 Version: 14.1.3
 Release: alt1
